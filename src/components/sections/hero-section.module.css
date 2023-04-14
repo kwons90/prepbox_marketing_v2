@@ -1,0 +1,126 @@
+.hero {
+    position: relative;
+    background-color: #4098f9;
+    padding: 280px 0 326px 0;
+}
+
+.hero-container {
+    position: relative;
+    max-width: 1272px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.hero-content {
+    max-width: 556px;
+}
+
+.hero__content-list {
+    list-style: none;
+    margin: 16px 0 25px 0;
+    padding: 0;
+}
+
+.hero__content-list li {
+    display: flex;
+    align-items: center;
+}
+
+.hero__content-list li p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 12px;
+}
+
+.hero__content-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 40px;
+    letter-spacing: -0.18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #121217;
+    padding: 16px 48px;
+    transition: all 0.25s;
+}
+
+.hero__content-btn svg {
+    transition: all 0.25s;
+}
+
+.hero__content-btn:hover {
+    background-color: #ececec;
+}
+
+.hero__content-btn:hover svg {
+    transform: translateX(12px);
+}
+
+.hero__content-btn span {
+    margin-right: 12px;
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 1359px;
+    height: 812px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1699.98px) {
+    .hero-image {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .hero {
+        height: 100vh;
+        padding: 0;
+    }
+    .hero-container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .hero-image {
+        height: 100%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero__content-btn {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 13px 36px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero__content-btn {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 26px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-container {
+        padding: 0 15px;
+    }
+    .hero-image {
+        width: 100%;
+    }
+}
